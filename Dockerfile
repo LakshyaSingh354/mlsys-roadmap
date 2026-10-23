@@ -32,10 +32,8 @@ RUN python -m pip install --upgrade pip setuptools wheel \
     && python -m pip install \
       ipython ipykernel jupyterlab \
       numpy scipy pandas matplotlib seaborn \
-      pytest pytest-benchmark hypothesis \
-      # Triton is installed as the version compatible with this PyTorch build.
+      pytest pytest-benchmark hypothesis
 
-# Startup script is also available for Vast.ai's On-start Script field.
 COPY scripts/mlsys-onstart.sh /usr/local/bin/mlsys-onstart
 RUN chmod 0755 /usr/local/bin/mlsys-onstart \
     && mkdir -p /workspace

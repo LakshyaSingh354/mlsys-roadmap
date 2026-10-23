@@ -1,0 +1,6 @@
+[submodule "lib/10714/hw00"]
+	path = lib/10714/hw00
+	url = https://github.com/dlsyscourse/hw0.git
+[submodule "lib/10714/hw0"]
+	path = lib/10714/hw0
+	url = https://github.com/dlsyscourse/hw0.git

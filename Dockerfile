@@ -14,6 +14,13 @@ ENV TZ=Etc/UTC \
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+      coreutils \
+      findutils \
+      grep \
+      sed \
+      gawk \
+      util-linux \
+      procps \
       ca-certificates curl git git-lfs build-essential cmake ninja-build pkg-config \
       gdb g++ gcc make ccache \
       python3 python3-dev python3-pip python3-venv \
